@@ -8,9 +8,8 @@ Generate strong passwords and instantly check their strength.
 
 ## 🚀 Features
 
-- 🔑 Customizable password generation (length, character sets)
+- 🔑 Generates secure passwords with customizable length and characters
 - 📊 Password-strength meter (weak, medium, strong)
-- 📱 Responsive, mobile-friendly UI
 - 🔄 Instant feedback without page reload
 
 ---
@@ -42,7 +41,7 @@ Generate strong passwords and instantly check their strength.
 
 1. **Clone the repo**  
    ```bash
-   git clone [https://github.com/yourusername/password-generator-strength-checker.git](https://github.com/Snehdoshi/Password-Generator-and-Strength-Checker-by-Py-Project)
+   git clone (https://github.com/Snehdoshi/Password-Generator-and-Strength-Checker-by-Py-Project)
    cd app.py
    ```
 
