@@ -49,16 +49,21 @@ def check_password_strength(password):
         strength += 1
     if re.search(r'[@#$%+=!]', password):
         strength += 1
+    if len(password) >= 12:  
+        strength += 1
 
     levels = {
-        5: "Very Strong",
-        4: "Strong",
-        3: "Medium",
-        2: "Weak",
+        6: "Very Strong",
+        5: "Strong",
+        4: "Medium",
+        3: "Weak",
+        2: "Very Weak",
         1: "Very Weak",
         0: "Very Weak"
     }
+    
     return levels[strength]
+
 
 @app.route('/')
 def index():
@@ -75,8 +80,7 @@ def generate():
     password = generate_password(length, include_uppercase, include_numbers, include_special)
     if not password:
         return jsonify({'error': 'Password length too short for selected options.'}), 400
-    if length <= 0:
-        return('You Cannot go less than Zero')
+
 
     strength = check_password_strength(password)
     return jsonify({'password': password, 'strength': strength})
