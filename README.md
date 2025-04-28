@@ -18,7 +18,8 @@ Generate strong passwords and instantly check their strength.
 
 - **Backend**:  
   - Python 3.x  
-  - Flask  
+  - Flask
+    
 - **Frontend**:  
   - HTML5  
   - CSS3  
