@@ -57,7 +57,7 @@
     <h2>Password Generator and Strength Checker</h2>
 
     <label>Password Length:</label>
-    <input type="number" id="length" value="12">
+    <input type="number" id="length" value="12" class="js-length-selector">
 
     <label><input type="checkbox" id="uppercase" checked> Include Uppercase</label>
     <label><input type="checkbox" id="numbers" checked> Include Numbers</label>
@@ -119,7 +119,7 @@
       }
     }
 
-    document.getElementById('length').addEventListener('input' , () => {
+    document.getElementById('length').addEventListener('input' , function()  {
        const length = parseInt(this.value, 10);
 
        if(length <= 0) {
@@ -127,6 +127,8 @@
         this.value = 1;
        }
     });
+
+   
     </script>
     
 
